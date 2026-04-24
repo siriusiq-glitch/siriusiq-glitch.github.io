@@ -3,538 +3,174 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tech&Politics 첫 모임 | 국회 기술과 정치 연구회</title>
-  <meta property="og:title" content="Tech&Politics 첫 모임 — 피지컬AI와 로보틱스" />
-  <meta property="og:description" content="2026년 4월 17일(금) 저녁 6시 · 국회의원회관 · 현대차 로보틱스사업실 최리군 상무 특강" />
+  <title>Tech&Politics 두 번째 세미나 | 국회 기술과 정치 연구회</title>
+  <meta property="og:title" content="Tech&Politics 두 번째 세미나 — AI는 어떻게 우리의 무기가 되는가" />
+  <meta property="og:description" content="2026년 5월 11일(월) 오후 6시 · 국회의원회관 · 이경전 경희대 교수 특강" />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Inter:wght@300;400;500;700&display=swap');
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --black: #0a0a0a;
-      --white: #ffffff;
-      --gray-100: #f5f5f5;
-      --gray-200: #e8e8e8;
-      --gray-500: #888;
-      --gray-700: #444;
-      --accent: #1a1a2e;
-      --accent-light: #16213e;
-    }
-
+    :root { --black: #0a0a0a; --white: #ffffff; --gray-100: #f5f5f5; --gray-200: #e8e8e8; --gray-500: #888; --gray-700: #444; }
     html { scroll-behavior: smooth; }
-
-    body {
-      font-family: 'Noto Sans KR', 'Inter', sans-serif;
-      background: var(--white);
-      color: var(--black);
-      line-height: 1.7;
-    }
-
-    /* ── HEADER ── */
-    header {
-      padding: 28px 40px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 1px solid var(--gray-200);
-    }
-    .logo {
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--black);
-    }
+    body { font-family: 'Noto Sans KR', 'Inter', sans-serif; background: var(--white); color: var(--black); line-height: 1.7; }
+    header { padding: 28px 40px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--gray-200); }
+    .logo { font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--black); }
     .logo span { color: var(--gray-500); font-weight: 400; }
-
-    /* ── HERO ── */
-    .hero {
-      padding: 100px 40px 80px;
-      max-width: 860px;
-      margin: 0 auto;
-    }
-    .tag {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--gray-500);
-      margin-bottom: 28px;
-    }
-    .hero h1 {
-      font-size: clamp(2rem, 5vw, 3.4rem);
-      font-weight: 700;
-      line-height: 1.2;
-      color: var(--black);
-      margin-bottom: 20px;
-      letter-spacing: -0.02em;
-    }
-    .hero h1 em {
-      font-style: normal;
-      color: var(--gray-500);
-    }
-    .hero-desc {
-      font-size: 1.05rem;
-      color: var(--gray-700);
-      max-width: 600px;
-      margin-bottom: 48px;
-      font-weight: 300;
-    }
-
-    /* ── DIVIDER ── */
-    .divider {
-      width: 48px;
-      height: 2px;
-      background: var(--black);
-      margin: 0 auto 80px;
-    }
-
-    /* ── SECTION: 연구회 소개 ── */
-    .section-intro {
-      background: var(--black);
-      color: var(--white);
-      padding: 80px 40px;
-    }
-    .section-intro .inner {
-      max-width: 860px;
-      margin: 0 auto;
-    }
-    .section-label {
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--gray-500);
-      margin-bottom: 32px;
-    }
-    .intro-title {
-      font-size: clamp(1.4rem, 3vw, 2rem);
-      font-weight: 700;
-      margin-bottom: 12px;
-      letter-spacing: -0.01em;
-    }
-    .intro-tagline {
-      font-size: 1rem;
-      color: #aaa;
-      margin-bottom: 32px;
-      font-weight: 300;
-    }
-    .intro-body {
-      font-size: 0.95rem;
-      color: #ccc;
-      max-width: 640px;
-      line-height: 1.9;
-      font-weight: 300;
-    }
-
-    /* ── ACTIVITIES ── */
-    .activities {
-      margin-top: 48px;
-      padding-top: 40px;
-      border-top: 1px solid #333;
-    }
-    .activity-label {
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--gray-500);
-      margin-bottom: 28px;
-    }
-    .activity-list {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 40px;
-    }
-    .activity-list li {
-      font-size: 0.9rem;
-      color: #ccc;
-      font-weight: 300;
-      padding: 10px 0;
-      border-bottom: 1px solid #222;
-      line-height: 1.6;
-    }
+    .hero { padding: 100px 40px 80px; max-width: 860px; margin: 0 auto; }
+    .tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 28px; }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3.4rem); font-weight: 700; line-height: 1.2; color: var(--black); margin-bottom: 20px; letter-spacing: -0.02em; }
+    .hero h1 em { font-style: normal; color: var(--gray-500); }
+    .hero-desc { font-size: 1.05rem; color: var(--gray-700); max-width: 600px; margin-bottom: 48px; font-weight: 300; }
+    .divider { width: 48px; height: 2px; background: var(--black); margin: 0 auto 80px; }
+    .section-intro { background: var(--black); color: var(--white); padding: 80px 40px; }
+    .section-intro .inner { max-width: 860px; margin: 0 auto; }
+    .section-label { font-size: 11px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 32px; }
+    .intro-title { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700; margin-bottom: 12px; letter-spacing: -0.01em; }
+    .intro-tagline { font-size: 1rem; color: #aaa; margin-bottom: 32px; font-weight: 300; }
+    .intro-body { font-size: 0.95rem; color: #ccc; max-width: 640px; line-height: 1.9; font-weight: 300; }
+    .activities { margin-top: 48px; padding-top: 40px; border-top: 1px solid #333; }
+    .activity-label { font-size: 11px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 28px; }
+    .activity-list { list-style: none; padding: 0; margin: 0 0 40px; }
+    .activity-list li { font-size: 0.9rem; color: #ccc; font-weight: 300; padding: 10px 0; border-bottom: 1px solid #222; line-height: 1.6; }
     .activity-list li:last-child { border-bottom: none; }
-    .key-message {
-      margin-top: 10px;
-      font-size: 0.82rem;
-      color: #aaa;
-      font-weight: 300;
-      line-height: 1.7;
-      font-style: italic;
-      border-left: 2px solid #444;
-      padding-left: 10px;
-    }
-    .activity-list li strong {
-      display: block;
-      color: #eee;
-      font-weight: 500;
-      font-size: 0.95rem;
-      margin-bottom: 2px;
-    }
-    .activity-photos {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-    }
-    .activity-photos img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      display: block;
-    }
-    @media (max-width: 600px) {
-      .activity-photos {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    /* ── SECTION: 첫 모임 ── */
-    .section-meeting {
-      padding: 80px 40px;
-      max-width: 860px;
-      margin: 0 auto;
-    }
-    .meeting-intro {
-      font-size: 1rem;
-      color: var(--gray-700);
-      margin-bottom: 20px;
-      font-weight: 300;
-    }
-    .meeting-body {
-      font-size: 1rem;
-      color: var(--gray-700);
-      margin-bottom: 48px;
-      font-weight: 300;
-    }
-
-    /* ── QUOTE ── */
-    .quote-block {
-      border-left: 3px solid var(--black);
-      padding: 20px 28px;
-      margin-bottom: 56px;
-      background: var(--gray-100);
-    }
-    .quote-text {
-      font-size: 1.1rem;
-      font-weight: 500;
-      color: var(--black);
-      margin-bottom: 10px;
-      line-height: 1.6;
-    }
-    .quote-source {
-      font-size: 0.82rem;
-      color: var(--gray-500);
-      font-weight: 400;
-    }
-
-    /* ── TABLE ── */
-    .info-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 32px;
-    }
-    .info-table tr {
-      border-bottom: 1px solid var(--gray-200);
-    }
-    .info-table tr:first-child {
-      border-top: 2px solid var(--black);
-    }
-    .info-table td {
-      padding: 18px 0;
-      font-size: 0.95rem;
-      vertical-align: top;
-    }
-    .info-table td:first-child {
-      width: 120px;
-      color: var(--gray-500);
-      font-weight: 500;
-      font-size: 0.82rem;
-      letter-spacing: 0.04em;
-      padding-right: 24px;
-    }
-    .info-table td:last-child {
-      color: var(--black);
-      font-weight: 400;
-    }
-
-    .meeting-note {
-      font-size: 0.85rem;
-      color: var(--gray-500);
-      margin-top: 8px;
-    }
-
-    /* ── SECTION: 신청 ── */
-    .section-form {
-      background: var(--gray-100);
-      padding: 80px 40px;
-    }
-    .section-form .inner {
-      max-width: 560px;
-      margin: 0 auto;
-    }
-    .form-title {
-      font-size: 1.5rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-      letter-spacing: -0.01em;
-    }
-    .form-subtitle {
-      font-size: 0.9rem;
-      color: var(--gray-500);
-      margin-bottom: 40px;
-    }
-
-    .form-group {
-      margin-bottom: 20px;
-    }
-    .form-group label {
-      display: block;
-      font-size: 0.82rem;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--gray-700);
-      margin-bottom: 8px;
-    }
-    .form-group input {
-      width: 100%;
-      padding: 14px 16px;
-      border: 1px solid var(--gray-200);
-      background: var(--white);
-      font-size: 0.95rem;
-      font-family: inherit;
-      color: var(--black);
-      outline: none;
-      transition: border-color 0.2s;
-      -webkit-appearance: none;
-      border-radius: 0;
-    }
-    .form-group input:focus {
-      border-color: var(--black);
-    }
+    .key-message { margin-top: 10px; font-size: 0.82rem; color: #aaa; font-weight: 300; line-height: 1.7; font-style: italic; border-left: 2px solid #444; padding-left: 10px; }
+    .activity-list li strong { display: block; color: #eee; font-weight: 500; font-size: 0.95rem; margin-bottom: 2px; }
+    .activity-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 40px; }
+    .activity-photos img { width: 100%; height: 220px; object-fit: cover; display: block; }
+    @media (max-width: 600px) { .activity-photos { grid-template-columns: 1fr; } }
+    .section-meeting { padding: 80px 40px; max-width: 860px; margin: 0 auto; }
+    .meeting-intro { font-size: 1rem; color: var(--gray-700); margin-bottom: 20px; font-weight: 300; }
+    .meeting-body { font-size: 1rem; color: var(--gray-700); margin-bottom: 48px; font-weight: 300; }
+    .quote-block { border-left: 3px solid var(--black); padding: 20px 28px; margin-bottom: 56px; background: var(--gray-100); }
+    .quote-text { font-size: 1.1rem; font-weight: 500; color: var(--black); margin-bottom: 10px; line-height: 1.6; }
+    .quote-source { font-size: 0.82rem; color: var(--gray-500); font-weight: 400; }
+    .info-table { width: 100%; border-collapse: collapse; margin-bottom: 32px; }
+    .info-table tr { border-bottom: 1px solid var(--gray-200); }
+    .info-table tr:first-child { border-top: 2px solid var(--black); }
+    .info-table td { padding: 18px 0; font-size: 0.95rem; vertical-align: top; }
+    .info-table td:first-child { width: 120px; color: var(--gray-500); font-weight: 500; font-size: 0.82rem; letter-spacing: 0.04em; padding-right: 24px; }
+    .info-table td:last-child { color: var(--black); font-weight: 400; }
+    .section-form { background: var(--gray-100); padding: 80px 40px; }
+    .section-form .inner { max-width: 560px; margin: 0 auto; }
+    .form-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.01em; }
+    .form-subtitle { font-size: 0.9rem; color: var(--gray-500); margin-bottom: 40px; }
+    .form-group { margin-bottom: 20px; }
+    .form-group label { display: block; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gray-700); margin-bottom: 8px; }
+    .form-group input { width: 100%; padding: 14px 16px; border: 1px solid var(--gray-200); background: var(--white); font-size: 0.95rem; font-family: inherit; color: var(--black); outline: none; transition: border-color 0.2s; -webkit-appearance: none; border-radius: 0; }
+    .form-group input:focus { border-color: var(--black); }
     .form-group input::placeholder { color: #bbb; }
-
-    .submit-btn {
-      width: 100%;
-      padding: 16px;
-      background: var(--black);
-      color: var(--white);
-      border: none;
-      font-size: 0.95rem;
-      font-weight: 700;
-      font-family: inherit;
-      letter-spacing: 0.06em;
-      cursor: pointer;
-      transition: background 0.2s, transform 0.1s;
-      margin-top: 8px;
-    }
+    .submit-btn { width: 100%; padding: 16px; background: var(--black); color: var(--white); border: none; font-size: 0.95rem; font-weight: 700; font-family: inherit; letter-spacing: 0.06em; cursor: pointer; transition: background 0.2s, transform 0.1s; margin-top: 8px; }
     .submit-btn:hover { background: #222; }
     .submit-btn:active { transform: scale(0.99); }
     .submit-btn:disabled { background: var(--gray-500); cursor: not-allowed; }
-
-    .form-success {
-      display: none;
-      text-align: center;
-      padding: 48px 0;
-    }
+    .form-success { display: none; text-align: center; padding: 48px 0; }
     .form-success .check { font-size: 2.5rem; margin-bottom: 16px; }
     .form-success h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 8px; }
     .form-success p { font-size: 0.9rem; color: var(--gray-500); }
-
-    /* ── FOOTER ── */
-    footer {
-      padding: 40px;
-      border-top: 1px solid var(--gray-200);
-      text-align: center;
-      font-size: 0.82rem;
-      color: var(--gray-500);
-    }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 600px) {
-      header { padding: 20px 24px; }
-      .hero { padding: 64px 24px 56px; }
-      .section-intro { padding: 60px 24px; }
-      .section-meeting { padding: 60px 24px; }
-      .section-form { padding: 60px 24px; }
-      footer { padding: 32px 24px; }
-      .info-table td:first-child { width: 90px; }
-    }
+    footer { padding: 40px; border-top: 1px solid var(--gray-200); text-align: center; font-size: 0.82rem; color: var(--gray-500); }
+    @media (max-width: 600px) { header { padding: 20px 24px; } .hero { padding: 64px 24px 56px; } .section-intro { padding: 60px 24px; } .section-meeting { padding: 60px 24px; } .section-form { padding: 60px 24px; } footer { padding: 32px 24px; } .info-table td:first-child { width: 90px; } }
   </style>
 </head>
 <body>
-
-  <!-- HEADER -->
-  <header>
-    <div class="logo">Tech<span>&</span>Politics</div>
-    <div style="font-size:13px; color:var(--gray-500);">국회 기술과 정치 연구회</div>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="tag">첫 공식 모임 · 2026. 4. 17</div>
-    <h1>피지컬AI와 로보틱스,<br/><em>로보틱스랩의 도전</em></h1>
-    <p class="hero-desc">
-      Atlas가 공장에 들어온 세상, 정치는 무엇을 준비해야 하는가.
-    </p>
-    <a href="#form" style="display:inline-block; background:var(--black); color:var(--white); padding:14px 32px; font-size:0.9rem; font-weight:700; letter-spacing:0.06em; text-decoration:none; transition:background 0.2s;">모임 신청하기 →</a>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- 섹션 1: 연구회 소개 -->
-  <section class="section-intro">
-    <div class="inner">
-      <div class="section-label">About</div>
-      <div class="intro-title">국회 기술과 정치 연구회</div>
-      <div class="intro-tagline">Tech &amp; Politics</div>
-      <p class="intro-body">
-        에너지, AI, 조선, 방산, 핵심광물, 우주 — 기술이 정치를 만나는 곳에서 일하고 연구합니다.<br/><br/>
-        전략기술이 국제정치·안보·외교와 교차하는 지점을 분석하고, 정부·산업·전문가와의 교류를 통해 우리의 역할을 탐색합니다.
-      </p>
-
-      <!-- 최근 활동 -->
-      <div class="activities">
-        <div class="activity-label">Recent</div>
-        <ul class="activity-list">
-          <li>
-            <strong>한화오션 현장 특강</strong>
-            「한미 조선협력과 조선산업의 미래」 · 정인섭 사장 · 2026.01.12. · 한화오션 서울사무소
-            <p class="key-message">(Key Message) 한미 조선협력은 단순한 공장 이전이나 하청 관계가 아니라 기술동맹의 성격을 갖는다. 미국은 조선업 역량을 필요로 하고, 한국은 기술력은 있지만 시장과 구조적 안정성이 필요한 상황이다. 미국의 해군·잠수함 역량을 보완하는 과정에 한국 조선산업이 참여하는 것은, 장기적으로 한국 조선기술을 글로벌 표준으로 끌어올리는 자산이 될 수 있다.</p>
-          </li>
-          <li>
-            <strong>국회사무처 연구모임 신청 및 연구비 배정</strong>
-            2026.01.~02.
-          </li>
-        </ul>
-        <div class="activity-photos">
-          <img src="hanwha1.jpg" alt="한화오션 현장 특강 단체사진" />
-          <img src="hanwha2.jpg" alt="한화오션 현장 특강 강연 사진" />
-        </div>
+<header>
+  <div class="logo">Tech<span>&</span>Politics</div>
+  <div style="font-size:13px; color:var(--gray-500);">국회 기술과 정치 연구회</div>
+</header>
+<section class="hero">
+  <div class="tag">두 번째 세미나 · 2026. 5. 11</div>
+  <h1>AI는 어떻게<br/>우리의 무기가 되는가</h1>
+  <p class="hero-desc">보좌진을 위한 Claude 실전 활용부터 소버린AI 전망까지</p>
+  <a href="#form" style="display:inline-block; background:var(--black); color:var(--white); padding:14px 32px; font-size:0.9rem; font-weight:700; letter-spacing:0.06em; text-decoration:none; transition:background 0.2s;">모임 신청하기 →</a>
+</section>
+<div class="divider"></div>
+<section class="section-intro">
+  <div class="inner">
+    <div class="section-label">About</div>
+    <div class="intro-title">국회 기술과 정치 연구회</div>
+    <div class="intro-tagline">Tech &amp; Politics</div>
+    <p class="intro-body">에너지, AI, 조선, 방산, 핵심광물, 우주 — 기술이 정치를 만나는 곳에서 일하고 연구합니다.<br/><br/>전략기술이 국제정치·안보·외교와 교차하는 지점을 분석하고, 정부·산업·전문가와의 교류를 통해 우리의 역할을 탐색합니다.</p>
+    <div class="activities">
+      <div class="activity-label">Recent</div>
+      <ul class="activity-list">
+        <li>
+          <strong>첫 번째 세미나 — 피지컬AI와 로보틱스, 로보틱스랩의 도전</strong>
+          최리군 상무 · 현대차 로보틱스사업실 · 2026.04.17. · 국회의원회관 제5간담회의실
+          <p class="key-message">Atlas가 공장에 들어온 세상, 정치는 무엇을 준비해야 하는가. 기술에 대한 이해를 넘어, 일자리와 소득의 변화 — 그리고 그 안에서 정치와 우리의 역할에 대해 이야기 나눴습니다.</p>
+        </li>
+        <li>
+          <strong>한화오션 현장 특강</strong>
+          「한미 조선협력과 조선산업의 미래」 · 정인섭 사장 · 2026.01.12. · 한화오션 서울사무소
+          <p class="key-message">(Key Message) 한미 조선협력은 단순한 공장 이전이나 하청 관계가 아니라 기술동맹의 성격을 갖는다. 미국은 조선업 역량을 필요로 하고, 한국은 기술력은 있지만 시장과 구조적 안정성이 필요한 상황이다. 미국의 해군·잠수함 역량을 보완하는 과정에 한국 조선산업이 참여하는 것은, 장기적으로 한국 조선기술을 글로벌 표준으로 끌어올리는 자산이 될 수 있다.</p>
+        </li>
+        <li>
+          <strong>국회사무처 연구모임 신청 및 연구비 배정</strong>
+          2026.01.~02.
+        </li>
+      </ul>
+      <div class="activity-photos">
+        <img src="semi1.jpg" alt="피지컬AI와 로보틱스 세미나 현장" />
+        <img src="semi2.jpg" alt="피지컬AI와 로보틱스 세미나 강연" />
+      </div>
+      <div class="activity-photos">
+        <img src="hanwha1.jpg" alt="한화오션 현장 특강 단체사진" />
+        <img src="hanwha2.jpg" alt="한화오션 현장 특강 강연 사진" />
       </div>
     </div>
-  </section>
-
-  <!-- 섹션 2: 첫 모임 -->
-  <section class="section-meeting">
-    <div class="section-label">첫 모임</div>
-
-    <p class="meeting-intro">
-      국회 기술과 정치 연구회 첫 공식 모임을 진행합니다.
-    </p>
-
-    <!-- 따옴표 -->
-    <div class="quote-block">
-      <div class="quote-text">"로봇을 단순한 기계가 아닌 인간의 동반자로 구현할 것"</div>
-      <div class="quote-source">— 최리군 상무, 현대차 로보틱스사업실 (i-FORUM, 2025.10.23.)</div>
+  </div>
+</section>
+<section class="section-meeting">
+  <div class="section-label">두 번째 세미나</div>
+  <p class="meeting-intro">국회 기술과 정치 연구회 두 번째 공식 세미나입니다.</p>
+  <div class="quote-block">
+    <div class="quote-text">"AI를 도구가 아닌 무기로 다루는 사람이 정치를 바꾼다"</div>
+    <div class="quote-source">— 국회 기술과 정치 연구회 Tech &amp; Politics</div>
+  </div>
+  <p class="meeting-body">보좌진의 실무에서 AI를 어떻게 활용할 것인가 — Claude 실전 활용 사례부터 소버린AI의 국제 동향까지, 이경전 교수님과 함께 AI 시대 정치의 역할을 논의합니다.</p>
+  <table class="info-table">
+    <tr><td>주제</td><td>AI는 어떻게 우리의 무기가 되는가</td></tr>
+    <tr><td>강연자</td><td>이경전 교수 · 경희대학교 / 한국AI서비스학회 회장</td></tr>
+    <tr><td>일시</td><td>2026년 5월 11일(월) 오후 6시</td></tr>
+    <tr><td>장소</td><td>국회의원회관 제1간담회의실</td></tr>
+    <tr><td>주최</td><td>국회 기술과 정치 연구회 Tech &amp; Politics</td></tr>
+    <tr><td>후원</td><td>(사)경제사회연구원</td></tr>
+  </table>
+</section>
+<section class="section-form" id="form">
+  <div class="inner">
+    <div class="section-label">신청</div>
+    <div class="form-title">두 번째 세미나 신청하기</div>
+    <div class="form-subtitle">신청 내용은 siriusiq@gmail.com으로 전달됩니다.</div>
+    <form id="meetingForm" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="0643ce89-0731-413c-84a4-a3b8feeb76f7" />
+      <input type="hidden" name="subject" value="[Tech&Politics] 두 번째 세미나 신청" />
+      <input type="hidden" name="redirect" value="false" />
+      <div class="form-group"><label for="name">이름 *</label><input type="text" id="name" name="name" placeholder="홍길동" required /></div>
+      <div class="form-group"><label for="org">소속 *</label><input type="text" id="org" name="소속" placeholder="○○ 의원실 등" required /></div>
+      <div class="form-group"><label for="phone">연락처 *</label><input type="tel" id="phone" name="연락처" placeholder="010-0000-0000" /></div>
+      <button type="submit" class="submit-btn" id="submitBtn">신청하기 →</button>
+    </form>
+    <div class="form-success" id="formSuccess">
+      <div class="check">✓</div>
+      <h3>신청이 완료되었습니다.</h3>
+      <p>5월 11일(월) 오후 6시에 국회의원회관에서 뵙겠습니다.</p>
     </div>
-
-    <p class="meeting-body">
-      피지컬AI와 우리 삶의 변화에 대한 멤버들의 관심과 제안으로, 현대차 로보틱스사업실 최리군 상무님의 특강을 준비했습니다.<br/><br/>
-      기술에 대한 이해를 넘어, 일자리와 소득의 변화 — 그리고 그 안에서 정치와 우리의 역할에 대해 이야기 나눕니다.
-    </p>
-
-    <!-- 모임 정보 테이블 -->
-    <table class="info-table">
-      <tr>
-        <td>주제</td>
-        <td>피지컬AI와 로보틱스, 로보틱스랩의 도전</td>
-      </tr>
-      <tr>
-        <td>강연자</td>
-        <td>최리군 상무 · 현대차 로보틱스사업실</td>
-      </tr>
-      <tr>
-        <td>일시</td>
-        <td>2026년 4월 17일(금) 저녁 6시</td>
-      </tr>
-      <tr>
-        <td>장소</td>
-        <td>국회의원회관 제5간담회의실</td>
-      </tr>
-    </table>
-
-    <p class="meeting-note">* 특강 후 맥주 한 잔 예정입니다. 소액 회비 및 명함 지참 부탁드립니다.</p>
-  </section>
-
-  <!-- 섹션 3: 신청 폼 -->
-  <section class="section-form" id="form">
-    <div class="inner">
-      <div class="section-label">신청</div>
-      <div class="form-title">첫 모임 신청하기</div>
-      <div class="form-subtitle">신청 내용은 siriusiq@gmail.com으로 전달됩니다.</div>
-
-      <form id="meetingForm" action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="0643ce89-0731-413c-84a4-a3b8feeb76f7" />
-        <input type="hidden" name="subject" value="[Tech&Politics] 첫 모임 신청" />
-        <input type="hidden" name="redirect" value="false" />
-
-        <div class="form-group">
-          <label for="name">이름 *</label>
-          <input type="text" id="name" name="name" placeholder="홍길동" required />
-        </div>
-
-        <div class="form-group">
-          <label for="org">소속 *</label>
-          <input type="text" id="org" name="소속" placeholder="○○ 의원실 등" required />
-        </div>
-
-        <div class="form-group">
-          <label for="phone">연락처 *</label>
-          <input type="tel" id="phone" name="연락처" placeholder="010-0000-0000" />
-        </div>
-
-        <button type="submit" class="submit-btn" id="submitBtn">신청하기 →</button>
-      </form>
-
-      <div class="form-success" id="formSuccess">
-        <div class="check">✓</div>
-        <h3>신청이 완료되었습니다.</h3>
-        <p>4월 17일(금) 저녁 6시에 국회의원회관에서 뵙겠습니다.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    국회 기술과 정치 연구회 Tech &amp; Politics &nbsp;·&nbsp; 2026
-  </footer>
-
-  <script>
-    const form = document.getElementById('meetingForm');
-    const btn = document.getElementById('submitBtn');
-    const success = document.getElementById('formSuccess');
-
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      btn.disabled = true;
-      btn.textContent = '제출 중...';
-
-      const data = new FormData(form);
-      try {
-        const res = await fetch('https://api.web3forms.com/submit', {
-          method: 'POST',
-          body: data
-        });
-        const json = await res.json();
-        if (json.success) {
-          form.style.display = 'none';
-          success.style.display = 'block';
-        } else {
-          alert('오류가 발생했습니다. 다시 시도해 주세요.');
-          btn.disabled = false;
-          btn.textContent = '신청하기 →';
-        }
-      } catch {
-        alert('네트워크 오류가 발생했습니다. 다시 시도해 주세요.');
-        btn.disabled = false;
-        btn.textContent = '신청하기 →';
-      }
-    });
-  </script>
-
+  </div>
+</section>
+<footer>국회 기술과 정치 연구회 Tech &amp; Politics &nbsp;·&nbsp; 2026</footer>
+<script>
+  const form = document.getElementById('meetingForm');
+  const btn = document.getElementById('submitBtn');
+  const success = document.getElementById('formSuccess');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    btn.disabled = true; btn.textContent = '제출 중...';
+    const data = new FormData(form);
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: data });
+      const json = await res.json();
+      if (json.success) { form.style.display = 'none'; success.style.display = 'block'; }
+      else { alert('오류가 발생했습니다. 다시 시도해 주세요.'); btn.disabled = false; btn.textContent = '신청하기 →'; }
+    } catch { alert('네트워크 오류가 발생했습니다. 다시 시도해 주세요.'); btn.disabled = false; btn.textContent = '신청하기 →'; }
+  });
+</script>
 </body>
 </html>
